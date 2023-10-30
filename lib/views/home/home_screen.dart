@@ -1,6 +1,7 @@
 import 'package:beethechef/models/categories_model.dart';
 import 'package:beethechef/utilities/constants.dart';
 import 'package:beethechef/views/cart_and_checkout/cart_screen.dart';
+import 'package:beethechef/views/category/catogories_detail_screen.dart';
 import 'package:beethechef/views/home/components/custom_section.dart';
 import 'package:beethechef/views/home/components/drawer.dart';
 import 'package:beethechef/views/home/components/single_category_widget.dart';
@@ -69,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
       childDecoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
-      drawer: myDrawer(),
+      drawer: const MyDrawer(),
 
       child: Scaffold(
         appBar: AppBar(
@@ -124,12 +125,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return CustomScrollView(
       slivers: [
         SliverAppBar(
+          automaticallyImplyLeading: false,
           snap: false,
           pinned: true,
           floating: false,
           flexibleSpace: FlexibleSpaceBar(
-            centerTitle: true,
-            //Text
             background: Padding(
               padding: const EdgeInsets.all(12.0),
               child: CustomTextWidget(
@@ -239,19 +239,82 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const SizedBox(height: 10),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Top Rated Products'),
+                      CustomSection(
+                        heading: 'Top Rated Products',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Storage and Homes'),
+                      CustomSection(
+                        heading: 'Storage and Homes',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Lightings and Electrical'),
+                      CustomSection(
+                        heading: 'Lightings and Electrical',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Machines and Generators'),
+                      CustomSection(
+                        heading: 'Machines and Generators',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Saftey Equipments'),
+                      CustomSection(
+                        heading: 'Saftey Equipments',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Cleaning Equipments'),
+                      CustomSection(
+                        heading: 'Cleaning Equipments',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
-                      const CustomSection(heading: 'Tools'),
+                      CustomSection(
+                        heading: 'Tools',
+                        onTap: () {
+                          Get.to(
+                              CategoryDetailScreen(
+                                categoryName: categories[index].name,
+                              ),
+                              transition: Transition.rightToLeft);
+                        },
+                      ),
                       const Divider(thickness: 2),
                     ],
                   ),

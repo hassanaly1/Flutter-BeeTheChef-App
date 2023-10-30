@@ -1,5 +1,5 @@
+import 'package:beethechef/splash_screen.dart';
 import 'package:beethechef/utilities/constants.dart';
-import 'package:beethechef/views/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
             Theme.of(context).textTheme.apply(bodyColor: AppAssets.textColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

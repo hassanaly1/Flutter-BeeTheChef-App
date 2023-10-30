@@ -1,7 +1,7 @@
 import 'package:beethechef/models/product_model.dart';
 import 'package:beethechef/utilities/constants.dart';
 import 'package:beethechef/views/cart_and_checkout/checkout_screen.dart';
-import 'package:beethechef/views/multiple_products/multiple_products_screen.dart';
+import 'package:beethechef/views/multiple_products/components/custom_product_container.dart';
 import 'package:beethechef/widgets/custom_appbar.dart';
 import 'package:beethechef/widgets/custom_button.dart';
 import 'package:beethechef/widgets/custom_text_widget.dart';

@@ -6,7 +6,8 @@ import 'package:get/get.dart';
 
 class CustomSection extends StatelessWidget {
   final String heading;
-  const CustomSection({super.key, required this.heading});
+  final VoidCallback onTap;
+  const CustomSection({super.key, required this.heading, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,11 @@ class CustomSection extends StatelessWidget {
             children: [
               CustomTextWidget(
                   text: heading, fSize: 20, fWeight: FontWeight.w700),
-              CustomTextWidget(
-                  text: 'See All', fSize: 16, fWeight: FontWeight.w400),
+              InkWell(
+                onTap: onTap,
+                child: CustomTextWidget(
+                    text: 'See All', fSize: 16, fWeight: FontWeight.w400),
+              ),
             ],
           ),
           const SizedBox(height: 10),

@@ -29,7 +29,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
             child: Column(
               children: [
-                Image.asset('assets/applogo.jpg', height: 120, width: 300),
+                Image.asset('assets/images/applogo.png',
+                    height: 120, width: 300),
                 const SizedBox(height: 25),
                 CustomTextWidget(
                   text: 'Register Account',

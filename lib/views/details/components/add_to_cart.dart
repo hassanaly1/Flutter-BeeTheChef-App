@@ -1,6 +1,7 @@
 import 'package:beethechef/models/product_model.dart';
 import 'package:beethechef/utilities/constants.dart';
 import 'package:beethechef/views/cart_and_checkout/cart_screen.dart';
+import 'package:beethechef/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -35,24 +36,10 @@ class AddToCart extends StatelessWidget {
               },
             ),
           ),
-          Expanded(
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 48),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18)),
-                backgroundColor: product.color,
-              ),
-              child: Text(
-                "Buy  Now".toUpperCase(),
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
+          CustomButton(
+            buttonText: 'BUY NOW',
+            onTap: () {},
+          )
         ],
       ),
     );

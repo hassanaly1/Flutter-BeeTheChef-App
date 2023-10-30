@@ -59,7 +59,8 @@ class OTPScreenState extends State<OTPScreen> {
             child: Column(
               children: [
                 SizedBox(height: Get.height * 0.1),
-                Image.asset('assets/applogo.jpg', height: 120, width: 300),
+                Image.asset('assets/images/applogo.png',
+                    height: 120, width: 300),
                 const SizedBox(height: 25),
                 CustomTextWidget(
                   text: 'Enter OTP',
