@@ -35,7 +35,7 @@ class ItemCard extends StatelessWidget {
               text: product.title,
               textColor: AppAssets.textColor,
               fWeight: FontWeight.w500,
-              fSize: 18,
+              fSize: 16,
             ),
           ),
           CustomTextWidget(

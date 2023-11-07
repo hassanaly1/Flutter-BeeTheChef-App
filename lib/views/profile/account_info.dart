@@ -25,9 +25,9 @@ class AccountInfo extends StatelessWidget {
                 fWeight: FontWeight.w700,
               ),
               const SizedBox(height: 10),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage(userInfoModel.userProfilePicture),
+                backgroundImage: AssetImage('assets/images/saim.jpg'),
               ),
               const SizedBox(height: 10),
               CustomTextWidget(

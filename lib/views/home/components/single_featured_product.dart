@@ -47,7 +47,7 @@ class SingleFeaturedProductWidget extends StatelessWidget {
                   ),
                   CustomTextWidget(
                     text: products[index].title,
-                    fSize: 18,
+                    fSize: 16,
                     fWeight: FontWeight.w500,
                     maxLines: 1,
                     textColor: AppAssets.textColor,
